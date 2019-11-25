@@ -1,6 +1,9 @@
 class TwitterCLI::CLI 
   
-  def start 
-    puts "Hello World" 
+  def call
+    TwitterCLI::API.new.fetch 
+    TwitterCLI::Users.all.each do |user|
+      puts user.name 
+    end 
   end 
 end 
