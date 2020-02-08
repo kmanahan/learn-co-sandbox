@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative "../lib/users" 
-
-TwitterCLI::CLI.new.start
